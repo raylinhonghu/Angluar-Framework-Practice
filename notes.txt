@@ -1,0 +1,16 @@
+property binding direction:
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+@Input() hero:Hero;
+to hero <== send selectedHero
+child <== parent control
+
+
+
+event binding direction:
+(click)="onSelect(hero)"
+click trigger==>onSelect
+
+
+
+two-way binding:
+[(ngModel)]="hero.name"
